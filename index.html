@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Casa Aberta – Centro Cultural Inclusivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo principal</a>
+  <div class="bar" role="region" aria-label="Ferramentas de acessibilidade">
+    <div class="grp" role="group" aria-label="Tamanho do texto"><span>Texto:</span>
+      <button id="zm" aria-label="Diminuir texto">A−</button><button id="z0"
+        aria-label="Tamanho padrão do texto">A</button><button id="zp" aria-label="Aumentar texto">A+</button><span
+        id="zv" aria-live="polite">100%</span>
+    </div>
+    <div class="grp" role="group" aria-label="Contraste"><span>Contraste:</span>
+      <button data-t="auto" aria-pressed="true">Padrão</button><button data-t="dark"
+        aria-pressed="false">Escuro</button><button data-t="yellow" aria-pressed="false">Amarelo</button>
+    </div>
+    <div class="grp"><button id="read" aria-pressed="false">🔊 Ler página em voz alta</button></div>
+  </div>
+  <header class="site">
+    <a class="logo" href="#home"><svg width="40" height="40" viewBox="0 0 40 40" role="img"
+        aria-label="Logotipo: uma porta aberta">
+        <rect width="40" height="40" rx="10" fill="#0b5f6b" />
+        <path d="M10 34V8h14l6 3v23z" fill="#f2b632" />
+        <path d="M10 8l12 3v25L10 34z" fill="#0b5f6b" stroke="#fff" stroke-width="2" />
+      </svg>Casa Aberta</a>
+    <button id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Principal">
+      <ul id="menu"></ul>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <p class="crumb" id="crumb"></p>
+
+    <section class="page" id="home" aria-labelledby="h-home">
+      <div class="hero">
+        <div>
+          <h1 id="h-home" tabindex="-1">Cultura para todas as pessoas</h1>
+          <p>A Casa Aberta é um centro cultural comunitário com cursos, oficinas e eventos pensados para pessoas com
+            deficiência visual, auditiva, motora e cognitiva, e para quem quiser aprender junto.</p>
+          <p><a class="btn" href="#cursos">Ver cursos e eventos</a> <a class="btn alt" href="#acessibilidade">Como usar
+              os recursos</a></p>
+        </div>
+        <figure><svg viewBox="0 0 400 300" role="img" aria-labelledby="t1">
+            <title id="t1">Ilustração de pessoas diversas ao redor de uma mesa, com uma porta aberta ao fundo</title>
+            <rect width="400" height="300" fill="#0b5f6b" />
+            <path d="M290 40h70v220h-70z" fill="#f2b632" />
+            <path d="M290 40l-40 12v220l40-12z" fill="#fff" opacity=".9" />
+            <ellipse cx="160" cy="220" rx="130" ry="26" fill="#0d2b33" />
+            <circle cx="90" cy="150" r="22" fill="#f2b632" />
+            <rect x="70" y="174" width="40" height="46" rx="14" fill="#fff" />
+            <circle cx="160" cy="135" r="24" fill="#fff" />
+            <rect x="138" y="161" width="44" height="52" rx="14" fill="#f2b632" />
+            <circle cx="235" cy="150" r="22" fill="#e8f4f6" />
+            <rect x="215" y="174" width="40" height="46" rx="14" fill="#f2b632" />
+            <path d="M50 250h60" stroke="#fff" stroke-width="5" />
+          </svg>
+          <figcaption>Texto alternativo: pessoas diversas reunidas ao redor de uma mesa, perto de uma porta aberta.
+          </figcaption>
+        </figure>
+      </div>
+      <h2>Destaques</h2>
+      <ul class="grid" id="dest"></ul>
+    </section>
+
+    <section class="page" id="sobre" aria-labelledby="h-sobre" hidden>
+      <h1 id="h-sobre" tabindex="-1">Sobre a Casa Aberta</h1>
+      <p>Nascemos para provar que um espaço cultural funciona melhor quando todo mundo consegue entrar, participar e
+        criar. Cada curso tem legenda, audiodescrição, materiais em fonte ampliada e intérprete de Libras quando
+        necessário.</p>
+      <h2>Nossos princípios</h2>
+      <ul class="grid">
+        <li class="card">
+          <h3>Entrada sem barreiras</h3>
+          <p>Rampas, sinalização em relevo e site navegável só com teclado.</p>
+        </li>
+        <li class="card">
+          <h3>Conteúdo em vários formatos</h3>
+          <p>Todo vídeo tem legenda e todo áudio tem transcrição.</p>
+        </li>
+        <li class="card">
+          <h3>Ritmo de cada pessoa</h3>
+          <p>Aulas com pausas, linguagem simples e materiais de apoio.</p>
+        </li>
+      </ul>
+      <h2>Galeria</h2>
+      <ul class="grid" style="list-style:none;padding:0">
+        <li>
+          <figure><svg viewBox="0 0 300 200" role="img" aria-label="Sala de oficina com mesas e materiais de pintura">
+              <rect width="300" height="200" fill="#f2b632" />
+              <rect x="30" y="110" width="240" height="14" fill="#12202b" />
+              <circle cx="90" cy="80" r="26" fill="#0b5f6b" />
+              <circle cx="160" cy="70" r="20" fill="#fff" />
+              <circle cx="220" cy="85" r="24" fill="#c2185b" />
+            </svg>
+            <figcaption>Oficina de pintura: mesas amplas, tintas e pincéis ao alcance.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure><svg viewBox="0 0 300 200" role="img" aria-label="Palco pequeno com cortina azul e microfone">
+              <rect width="300" height="200" fill="#0b5f6b" />
+              <path d="M0 0h90c-20 60-20 120 0 200H0zM300 0h-90c20 60 20 120 0 200h90z" fill="#12202b" />
+              <rect x="145" y="70" width="10" height="90" fill="#fff" />
+              <circle cx="150" cy="62" r="14" fill="#f2b632" />
+            </svg>
+            <figcaption>Auditório com palco baixo, microfone e cortina azul.</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page" id="cursos" aria-labelledby="h-cursos" hidden>
+      <h1 id="h-cursos" tabindex="-1">Cursos e eventos</h1>
+      <div class="filters" role="group" aria-label="Filtrar por categoria" id="filters"></div>
+      <p id="count" aria-live="polite"></p>
+      <ul class="grid" id="cards"></ul>
+    </section>
+
+    <section class="page" id="midia" aria-labelledby="h-midia" hidden>
+      <h1 id="h-midia" tabindex="-1">Galeria de mídia</h1>
+      <h2>Vídeo: um dia na Casa Aberta</h2>
+      <div class="player" role="group" aria-label="Player de vídeo">
+        <div class="stage"><svg viewBox="0 0 320 180" role="img"
+            aria-label="Animação: círculos coloridos se reunindo no centro da tela">
+            <rect width="320" height="180" fill="#0d2b33" />
+            <circle cx="90" cy="90" r="24" fill="#f2b632">
+              <animate attributeName="cx" values="60;150;60" dur="6s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="230" cy="90" r="24" fill="#fff">
+              <animate attributeName="cx" values="260;170;260" dur="6s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="160" cy="90" r="16" fill="#5fd3e0" />
+          </svg>
+          <div class="cap" id="cap" hidden></div>
+        </div>
+        <div class="ctrl"><button id="vp" aria-pressed="false">▶ Reproduzir</button><button id="vc"
+            aria-pressed="true">Legendas: ligadas</button><button id="vd" aria-pressed="false">Audiodescrição:
+            desligada</button></div>
+        <details>
+          <summary>Transcrição do vídeo</summary>
+          <p>Bem-vindas e bem-vindos à Casa Aberta. Aqui, cada pessoa chega no seu ritmo. Neste vídeo você vê a oficina
+            de pintura, o auditório e a sala de leitura. Todos os espaços têm acesso sem degraus.</p>
+        </details>
+      </div>
+      <p><em>Demonstração:</em> troque a animação por um arquivo &lt;video&gt; com &lt;track kind="captions"&gt; no
+        projeto final.</p>
+      <h2>Áudio: mensagem de boas-vindas</h2>
+      <div class="player" role="group" aria-label="Player de áudio">
+        <div class="ctrl"><button id="ap" aria-pressed="false">▶ Ouvir</button><label for="vol"
+            style="margin:0">Volume</label><input id="vol" type="range" min="0" max="1" step=".1" value="1"
+            style="width:160px"></div>
+        <details open>
+          <summary>Transcrição do áudio</summary>
+          <p id="atxt">Olá! Aqui é a equipe da Casa Aberta. Nossos cursos são gratuitos e as inscrições ficam abertas o
+            ano inteiro. Pergunte o que precisar: estamos aqui para ajudar.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="page" id="acessibilidade" aria-labelledby="h-acess" hidden>
+      <h1 id="h-acess" tabindex="-1">Acessibilidade</h1>
+      <h2>Recursos deste site</h2>
+      <ul>
+        <li><strong>Zoom de texto:</strong> botões A−, A e A+ no topo, de 100% a 200%. A escolha fica salva.</li>
+        <li><strong>Contraste:</strong> padrão, escuro e amarelo sobre preto.</li>
+        <li><strong>Leitura em voz alta:</strong> usa a voz do seu navegador, que funciona em português.</li>
+        <li><strong>Navegação por teclado</strong> com foco sempre visível e link para pular ao conteúdo.</li>
+        <li><strong>Leitores de tela:</strong> landmarks, rótulos ARIA, avisos com aria-live e estados com aria-pressed
+          e aria-expanded.</li>
+      </ul>
+      <h2>Atalhos de teclado</h2>
+      <p><kbd>Tab</kbd> avança, <kbd>Shift</kbd> + <kbd>Tab</kbd> volta, <kbd>Enter</kbd> ou <kbd>Espaço</kbd> ativa
+        botões, <kbd>Esc</kbd> fecha o menu no celular.</p>
+      <h2>Declaração de acessibilidade</h2>
+      <p>Buscamos seguir as diretrizes WCAG 2.2 nível AA. Se encontrar alguma barreira, <a href="#contato">fale com a
+          gente</a> e vamos corrigir.</p>
+    </section>
+
+    <section class="page" id="contato" aria-labelledby="h-contato" hidden>
+      <h1 id="h-contato" tabindex="-1">Contato</h1>
+      <p>Campos marcados como (obrigatório) precisam ser preenchidos.</p>
+      <form id="f" novalidate>
+        <label for="nome">Nome (obrigatório)</label><input id="nome" autocomplete="name" aria-describedby="e-nome">
+        <p class="err" id="e-nome"></p>
+        <label for="email">E-mail (obrigatório)</label><input id="email" type="email" autocomplete="email"
+          aria-describedby="e-email">
+        <p class="err" id="e-email"></p>
+        <label for="msg">Mensagem (obrigatório)</label><textarea id="msg" rows="5" aria-describedby="e-msg"></textarea>
+        <p class="err" id="e-msg"></p>
+        <p><button class="btn" type="submit">Enviar mensagem</button></p>
+      </form>
+      <div id="status" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Casa Aberta · Centro cultural inclusivo · Projeto acadêmico (tema livre)</p>
+  </footer>
+  <div class="sr" id="live" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
